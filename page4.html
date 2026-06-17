@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comida 🍕 - DevDate</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <img src="assets/imagens/anjo4.png" alt="Anjo" class="anjo-icon" />
+        
+        <h1>EU TÔ SEMPRE <br /><span class="highlight">COM FOME</span> PRA SER HONESTA</h1>
+
+        <p>O que vamos comer?</p>
+        <p class="hint">(escolha quantos quiser, sem julgamento)</p>
+
+        <div class="food-grid" id="foodGrid">
+            <label class="food-option" data-value="Pizza">
+                <input type="checkbox" /> 🍕 Pizza
+            </label>
+            <label class="food-option" data-value="Sushi">
+                <input type="checkbox" /> 🍣 Sushi
+            </label>
+            <label class="food-option" data-value="Hambúrguer">
+                <input type="checkbox" /> 🍔 Hambúrguer
+            </label>
+            <label class="food-option" data-value="Macarrão">
+                <input type="checkbox" /> 🍝 Macarrão
+            </label>
+            <label class="food-option" data-value="Tacos">
+                <input type="checkbox" /> 🌮 Tacos
+            </label>
+            <label class="food-option" data-value="Ramen">
+                <input type="checkbox" /> 🍜 Ramen
+            </label>
+        </div>
+
+        <button class="btn btn-next" id="nextBtn4">
+            já escolhemos! →
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

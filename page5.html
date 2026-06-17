@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>É um date! ❤️ - DevDate</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <img src="assets/imagens/anjo5.png" alt="Anjo" class="anjo-icon" />
+        
+        <h1>NÓS <span class="highlight">CONSEGUIMOS!</span></h1>
+
+        <p class="big-text">É um date! ❤️</p>
+
+        <div class="confirm-card" id="confirmCard">
+            <div class="detail">
+                <span class="label">📅 QUANDO</span>
+                <span class="value" id="displayDate">Sexta, 26 de Junho</span>
+            </div>
+            <div class="detail">
+                <span class="label">⏰ às</span>
+                <span class="value" id="displayTime">19:30</span>
+            </div>
+            <div class="detail">
+                <span class="label">🍽️ COMIDA</span>
+                <span class="value" id="displayFood">Tacos</span>
+            </div>
+        </div>
+
+        <div class="special-msg">
+            <p>19:30, anotado! vou levar petiscos só por precaução 😊</p>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-success" onclick="copyPlan()">
+                📋 Copiar plano e me mandar
+            </button>
+            <button class="btn btn-secondary" onclick="restart()">
+                🔄 Recomeçar
+            </button>
+        </div>
+
+        <p class="footer">Feito com ❤️ no Replit</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

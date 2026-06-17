@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #fdf6f0 0%, #f8e8e0 50%, #fce4ec 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: #3d2c2a;
+}
+
+.container {
+    background: rgba(255, 248, 245, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 48px;
+    padding: 2.8rem 2.2rem;
+    max-width: 560px;
+    width: 100%;
+    border: 2px solid rgba(255, 182, 193, 0.3);
+    box-shadow: 0 30px 60px -15px rgba(200, 120, 140, 0.25);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.anjo-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 4px 15px rgba(255, 150, 180, 0.3));
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+    margin-bottom: 0.3rem;
+    color: #3d2c2a;
+}
+
+.highlight {
+    background: linear-gradient(135deg, #ff6b8a, #ff8a9b, #ff6b8a);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+p {
+    font-size: 1.05rem;
+    color: #5a4a48;
+    line-height: 1.6;
+}
+
+.question {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0.8rem 0 1.2rem;
+    color: #4a3a38;
+}
+
+.sub-question {
+    font-size: 1.1rem;
+    margin: 0.8rem 0 1.5rem;
+    color: #5a4a48;
+}
+
+.big-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3d2c2a;
+}
+
+.pink {
+    color: #ff6b8a;
+}
+
+.hint {
+    display: block;
+    font-size: 0.85rem;
+    color: #b08a8a;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.ps {
+    font-size: 0.9rem;
+    color: #b08a8a;
+    margin-top: 0.5rem;
+}
+
+.footer {
+    font-size: 0.8rem;
+    color: #c9a8a8;
+    margin-top: 1.5rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 0.5rem;
+    position: relative;
+    min-height: 70px;
+}
+
+.btn {
+    padding: 14px 36px;
+    border: none;
+    border-radius: 60px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    position: relative;
+}
+
+.btn-yes {
+    background: linear-gradient(135deg, #ff6b8a, #ff4d6d);
+    color: #fff;
+    box-shadow: 0 6px 25px rgba(255, 75, 100, 0.35);
+    transition: all 0.3s ease;
+}
+
+.btn-yes:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 35px rgba(255, 75, 100, 0.5);
+}
+
+.btn-no {
+    background: linear-gradient(135deg, #e8d5d5, #dcc8c8);
+    color: #7a6a68;
+    box-shadow: 0 4px 15px rgba(180, 150, 150, 0.2);
+    transition: all 0.1s ease;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-no:hover {
+    transform: scale(0.95);
+}
+
+.btn-next {
+    background: linear-gradient(135deg, #ff8a9b, #ff6b8a);
+    color: #fff;
+    padding: 14px 44px;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 25px rgba(255, 107, 138, 0.35);
+}
+
+.btn-next:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 35px rgba(255, 107, 138, 0.5);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #4ecdc4, #44b39d);
+    color: #fff;
+    box-shadow: 0 6px 25px rgba(78, 205, 196, 0.35);
+}
+
+.btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 35px rgba(78, 205, 196, 0.5);
+}
+
+.btn-secondary {
+    background: rgba(200, 180, 180, 0.25);
+    color: #7a6a68;
+    border: 2px solid rgba(200, 180, 180, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(200, 180, 180, 0.4);
+    transform: scale(1.05);
+}
+
+.date-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 1rem 0 1.8rem;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: 500;
+    color: #5a4a48;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.input-group input {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(200, 180, 180, 0.25);
+    border-radius: 14px;
+    padding: 14px 18px;
+    color: #3d2c2a;
+    font-size: 1rem;
+    width: 100%;
+    font-family: inherit;
+    transition: all 0.25s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff8a9b;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 25px rgba(255, 138, 155, 0.2);
+}
+
+.input-group input::-webkit-calendar-picker-indicator {
+    filter: none;
+    cursor: pointer;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin: 1.2rem 0 1.8rem;
+}
+
+.food-option {
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(200, 180, 180, 0.2);
+    border-radius: 16px;
+    padding: 14px 8px;
+    cursor: pointer;
+    transition: all 0.25s;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #5a4a48;
+    user-select: none;
+}
+
+.food-option:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #ffb0c0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 150, 180, 0.15);
+}
+
+.food-option.selected {
+    background: rgba(255, 138, 155, 0.15);
+    border-color: #ff8a9b;
+    box-shadow: 0 0 30px rgba(255, 138, 155, 0.15);
+    color: #3d2c2a;
+}
+
+.food-option input {
+    display: none;
+}
+
+.confirm-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    padding: 1.5rem 1.8rem;
+    margin: 1.2rem 0;
+    border: 2px solid rgba(200, 180, 180, 0.15);
+}
+
+.confirm-card .detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(200, 180, 180, 0.15);
+}
+
+.confirm-card .detail:last-child {
+    border-bottom: none;
+}
+
+.confirm-card .label {
+    color: #b08a8a;
+    font-weight: 500;
+}
+
+.confirm-card .value {
+    color: #3d2c2a;
+    font-weight: 600;
+}
+
+.special-msg {
+    background: rgba(255, 107, 138, 0.08);
+    border-radius: 18px;
+    padding: 1.2rem 1.5rem;
+    margin: 1.2rem 0;
+    border-left: 4px solid #ff6b8a;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 520px) {
+    .container {
+        padding: 1.8rem 1.2rem;
+        border-radius: 32px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .anjo-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .btn-group {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+
+    .confirm-card {
+        padding: 1.2rem;
+    }
+
+    .btn-no {
+        width: auto !important;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 380px) {
+    .food-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .anjo-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
