@@ -18,14 +18,7 @@ Um site de **date interativo e divertido** feito para pedir alguém especial par
 - **Responsivo** - funciona em celular, tablet e desktop
 - **Animações suaves** - os anjos flutuam e o botão foge com estilo
 
-### 🎮 Como funciona o botão "Não":
-
-1. Você tenta clicar no botão "Não"
-2. Ele **treme** (como se estivesse rindo de você)
-3. Depois **desliza** para outro lugar da tela
-4. Uma **frase engraçada** aparece
-5. Depois de **20 tentativas**, ele desiste e fica vermelho
-6. Mensagem: "😭 TÁ BOM! EU ACEITO!"
-7. Você clica e vai para o "Sim" 😂
-
 ---
+
+<img width="1353" height="603" alt="Screenshot_6" src="https://github.com/user-attachments/assets/f5127e95-c631-4307-8cc5-55364bc7b571" />
+<img width="1349" height="601" alt="Screenshot_7" src="https://github.com/user-attachments/assets/c897b3bc-59ba-4239-8b24-efa48594e55c" /><img width="1355" height="603" alt="Screenshot_8" src="https://github.com/user-attachments/assets/f2f7f237-3a2e-4038-855b-a0aa5b3cc826" />
